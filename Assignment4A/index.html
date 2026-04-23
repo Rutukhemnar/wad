@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Professional Mobile Website</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <!-- jQuery Mobile JS -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* Header */
+    .ui-header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+      color: white !important;
+      text-shadow: none;
+      border: none;
+    }
+
+    .ui-header h1 {
+      font-weight: 600;
+    }
+
+    /* Card Style */
+    .card {
+      background: #fff;
+      padding: 18px;
+      margin: 12px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #2a5298;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #2a5298;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .btn:hover {
+      background: #1e3c72;
+    }
+
+    /* Footer */
+    .ui-footer {
+      background: #1e3c72 !important;
+      color: white !important;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HOME PAGE ================= -->
+<div data-role="page" id="home">
+
+  <div data-role="header">
+    <h1>My Company</h1>
+  </div>
+
+  <div data-role="content">
+
+    <div class="card">
+      <h2>🚀 Web Development</h2>
+      <p>We build modern, responsive and scalable web applications.</p>
+      <a href="#services" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+      <h2>📱 Mobile Apps</h2>
+      <p>High-performance Android & hybrid mobile applications.</p>
+      <a href="#services" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+      <h2>☁ Cloud Solutions</h2>
+      <p>Secure and scalable cloud infrastructure for your business.</p>
+      <a href="#services" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+      <h2>📊 Analytics</h2>
+      <p>Data-driven insights to grow your business efficiently.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+
+  </div>
+
+  <div data-role="footer">
+    <h4>© 2026 My Company</h4>
+  </div>
+
+</div>
+
+<!-- ================= SERVICES PAGE ================= -->
+<div data-role="page" id="services">
+
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>Services</h1>
+  </div>
+
+  <div data-role="content">
+
+    <div class="card">
+      <h2>💻 Frontend Development</h2>
+      <p>HTML, CSS, JS, React-based UI systems.</p>
+    </div>
+
+    <div class="card">
+      <h2>⚙ Backend Development</h2>
+      <p>Node.js, Express, APIs, and database systems.</p>
+    </div>
+
+    <div class="card">
+      <h2>🗄 Database</h2>
+      <p>MongoDB, MySQL, secure data management.</p>
+    </div>
+
+  </div>
+
+  <div data-role="footer">
+    <h4>Services Page</h4>
+  </div>
+
+</div>
+
+<!-- ================= ABOUT PAGE ================= -->
+<div data-role="page" id="about">
+
+  <div data-role="header">
+    <a href="#home" data-icon="back">Back</a>
+    <h1>About Us</h1>
+  </div>
+
+  <div data-role="content">
+
+    <div class="card">
+      <h2>Who We Are</h2>
+      <p>
+        We are a technology company focused on building modern digital solutions
+        for web, mobile, and cloud platforms.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Our Mission</h2>
+      <p>
+        To deliver high-quality software solutions that solve real-world problems.
+      </p>
+    </div>
+
+  </div>
+
+  <div data-role="footer">
+    <h4>About Page</h4>
+  </div>
+
+</div>
+
+</body>
+</html>
