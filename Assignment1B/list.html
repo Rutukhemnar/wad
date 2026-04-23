@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users List</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style></style>
+</head>
+
+<body>
+
+  <h2 style="text-align:center; color:rgb(11, 11, 11);">Registered Users</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+      </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+  </table>
+
+  <div style="text-align:center;">
+    <a href="index.html">← Back to Form</a>
+  </div>
+
+  <script>
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    let table = document.getElementById("userTable");
+
+    users.forEach(user => {
+      table.innerHTML += `
+        <tr>
+          <td>${user.name}</td>
+          <td>${user.email}</td>
+         <td>${user.course}</td>
+        </tr>
+      `;
+    });
+  </script>
+
+</body>
+</html>
