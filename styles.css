@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card */
+.auth-card {
+  width: 360px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Button */
+.btn-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Input */
+.form-control {
+  border-radius: 10px;
+}
+
+/* Dashboard */
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: #212529;
+  color: white;
+}
+
+.sidebar a {
+  color: #adb5bd;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: #343a40;
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.register-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.register-card {
+  width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+/* Background */
+.profile-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Card */
+.profile-card {
+  width: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.profile-header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Avatar */
+.profile-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+/* Mini Cards */
+.mini-card {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Info box */
+.info-box {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  border-radius: 10px !important;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

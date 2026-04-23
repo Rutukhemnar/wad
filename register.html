@@ -1,0 +1,46 @@
+<div class="register-wrapper d-flex justify-content-center align-items-center">
+
+  <div class="register-card p-4">
+
+    <h3 class="text-center mb-3">Create Account 🚀</h3>
+
+    <!-- Name -->
+    <input [(ngModel)]="user.name" class="form-control mb-2" placeholder="Full Name">
+
+    <!-- Email -->
+    <input [(ngModel)]="user.email" class="form-control mb-2" placeholder="Email">
+
+    <!-- Phone -->
+    <input [(ngModel)]="user.phone" class="form-control mb-2" placeholder="Phone Number">
+
+    <!-- Gender -->
+    <select [(ngModel)]="user.gender" class="form-control mb-2">
+      <option value="">Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <!-- DOB -->
+    <input [(ngModel)]="user.dob" type="date" class="form-control mb-2">
+
+    <!-- Address -->
+    <textarea [(ngModel)]="user.address" class="form-control mb-2" placeholder="Address"></textarea>
+
+    <!-- Password -->
+    <input [(ngModel)]="user.password" type="password" class="form-control mb-2" placeholder="Password">
+
+    <!-- Confirm Password -->
+    <input [(ngModel)]="confirmPassword" type="password" class="form-control mb-2" placeholder="Confirm Password">
+
+   
+
+    <!-- Button -->
+    <button class="btn btn-gradient w-100" (click)="register()">Register</button>
+
+    <p class="text-center mt-3">
+      Already have account? <a routerLink="/">Login</a>
+    </p>
+
+  </div>
+</div>

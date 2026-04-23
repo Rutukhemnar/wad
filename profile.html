@@ -1,0 +1,52 @@
+<div class="profile-wrapper d-flex justify-content-center align-items-center">
+
+  <div class="profile-card p-0">
+
+    <!-- Top Banner -->
+    <div class="profile-header text-center text-white p-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+           class="profile-img mb-2">
+      <h4 class="fw-bold">{{user?.name}}</h4>
+      <p>{{user?.email}}</p>
+    </div>
+
+    <!-- Body -->
+    <div class="p-4">
+
+      <!-- Info Cards -->
+      <div class="row text-center mb-3">
+
+        <div class="col-6">
+          <div class="mini-card">
+            <p class="mb-1 text-muted">Status</p>
+            <strong>Active</strong>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="mini-card">
+            <p class="mb-1 text-muted">Role</p>
+            <strong>User</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Extra Details -->
+      <div class="info-box mb-3">
+        <p><strong>Phone:</strong> {{user?.phone || 'Not provided'}}</p>
+        <p><strong>Gender:</strong> {{user?.gender || 'Not provided'}}</p>
+        <p><strong>DOB:</strong> {{user?.dob || 'Not provided'}}</p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary">Edit Profile</button>
+        <button class="btn btn-danger" routerLink="/">Logout</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

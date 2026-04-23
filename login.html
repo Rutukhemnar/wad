@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+
+  <div class="auth-card p-4">
+
+    <div class="text-center mb-3">
+      <h4 class="fw-bold">MyApp</h4>
+      <p class="text-muted">Welcome back 👋</p>
+    </div>
+
+  <input [(ngModel)]="user.email" class="form-control mb-3" placeholder="Email">
+
+<input [(ngModel)]="user.password" type="password" class="form-control mb-3" placeholder="Password">
+
+    <div class="d-flex justify-content-between mb-3">
+      <small><input type="checkbox"> Remember</small>
+      <a href="#" class="small">Forgot?</a>
+    </div>
+
+    <button class="btn btn-gradient w-100 mb-3" (click)="login()">Login</button>
+
+    <div class="text-center text-muted mb-2">or</div>
+
+    <div class="d-flex gap-2">
+      <button class="btn btn-outline-dark w-100">Google</button>
+      <button class="btn btn-outline-dark w-100">GitHub</button>
+    </div>
+
+    <p class="text-center mt-3">
+      New user? <a routerLink="/register">Register</a>
+    </p>
+
+  </div>
+</div>
